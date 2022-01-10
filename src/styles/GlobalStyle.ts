@@ -38,7 +38,7 @@ const GlobalStyled = createGlobalStyle`
         font-family: inherit;
         color: inherit;
         font-size: inherit;
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     h1{
@@ -50,7 +50,12 @@ const GlobalStyled = createGlobalStyle`
     }
 
     span{
-        color: var(--primary-color)
+        color: var(--primary-color);
+    }
+    h6{
+        color: var(--white-color);
+        font-size: 1.2rem;
+        padding-bottom: .6rem;
     }
 `
 

@@ -51,10 +51,12 @@ const MainContentStyled = styled.main`
   min-height: 100vh;
   .lines {
     position: absolute;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    opacity: 0.4;
+    z-index: -1;
     .line-1,
     .line-2,
     .line-3,
