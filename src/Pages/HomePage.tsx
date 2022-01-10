@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import Hero from "../Components/hero/Hero";
 
 function HomePage() {
     return (
@@ -28,6 +29,7 @@ function HomePage() {
                         <YouTubeIcon />
                     </a>
                 </div>
+                <Hero />
             </div>
         </HomePageStyled>
     );
@@ -51,6 +53,7 @@ const HomePageStyled = styled.header`
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+        margin-bottom: 1rem;
         .icon{
             border: 2px solid var(--border-color);
             display: flex;

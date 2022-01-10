@@ -4,7 +4,9 @@ interface Props { }
 
 const PortfoliosPage: React.FC<Props> = () => {
     return (
-        <div>PortfoliosPage</div>
+        <div>
+            PortfoliosPage
+        </div>
     )
 }
 
