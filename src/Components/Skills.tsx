@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MainLayout, InnerLayout } from '../styles/Layouts'
+import { InnerLayout } from '../styles/Layouts'
 import ProgressBar from './ProgressBar'
 import Title from './Title'
 interface Props { }
@@ -9,7 +9,6 @@ interface Props { }
 const Skills: React.FC<Props> = () => {
     return (
         <SkillsStyled>
-            <MainLayout>
                 <Title title={'My Skills'} span={'My Skills'} />
                 <InnerLayout>
                     <div className="skills">
@@ -20,8 +19,7 @@ const Skills: React.FC<Props> = () => {
                         <ProgressBar title={'NODE.JS'} width={'70%'} text={'70%'} />
                         <ProgressBar title={'SQL'} width={'60%'} text={'60%'} />
                     </div>
-                </InnerLayout>
-            </MainLayout>
+            </InnerLayout>
         </SkillsStyled>
     )
 }

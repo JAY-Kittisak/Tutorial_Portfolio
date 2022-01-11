@@ -1,13 +1,17 @@
 import React from 'react'
 
+import Resume from '../Components/Resume'
 import Skills from '../Components/Skills'
+import { MainLayout } from '../styles/Layouts'
+
 interface Props { }
 
 const ResumePage: React.FC<Props> = () => {
     return (
-        <div>
+        <MainLayout>
             <Skills />
-        </div>
+            <Resume />
+        </MainLayout>
     )
 }
 

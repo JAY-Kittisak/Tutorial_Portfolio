@@ -6,14 +6,14 @@ export const Button = styled.button`
 	white-space: nowrap;
 	padding: 10px 20px;
 	font-size: 18px;
-	color: #fff;
+	color:var(--primary-color);
 	outline: none;
-	border: 2px solid #fff;
+	border: 2px solid var(--primary-color);
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
 	&:before {
-		background: #fff;
+		background: var(--primary-color);
 		content: '';
 		position: absolute;
 		top: 50%;
@@ -29,7 +29,8 @@ export const Button = styled.button`
 		height: 500%;
 	}
 	&:hover {
-		color: black;
+		color: var(--background-dark-color);
+		/* color: black; */
 	}
 `;
 
@@ -69,7 +70,8 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const HeroButton = styled(Button)`
-	color: black;
+	color: var(--background-dark-color);
+	border: 2px solid #fff;
 	&:before {
 		background: #fff;
 		height: 500%;
