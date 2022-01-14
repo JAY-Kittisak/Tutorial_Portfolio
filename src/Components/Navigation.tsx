@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import avatar from '../assets/image/img-5.jpg'
+import avatar from '../assets/image/kittisak2021.jpg'
 
 interface Props { }
 

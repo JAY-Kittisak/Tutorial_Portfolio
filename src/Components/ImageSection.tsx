@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../assets/image/JSR-Logo-new-PNG.png";
+import logo from "../assets/image/jay.jpg";
 import PrimaryButton from "./PrimaryButton";
 
 interface Props { }
