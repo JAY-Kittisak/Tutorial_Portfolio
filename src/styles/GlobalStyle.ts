@@ -97,6 +97,12 @@ const GlobalStyled = createGlobalStyle`
         color: var(---white-color);
         span{
             font-size: 4rem;
+            @media screen and (max-width: 502px){
+                font-size: 2rem;
+            }
+        }
+        @media screen and (max-width: 502px){
+            font-size: 2rem;
         }
     }
 

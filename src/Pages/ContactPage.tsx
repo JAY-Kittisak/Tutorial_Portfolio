@@ -86,8 +86,11 @@ const ContactPageStyled = styled.div`
             }
         }
         .right-content{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            @media screen and (max-width: 502px){
+                width: 70%;
+            }
         }
         .contact-title{
             h4{
@@ -98,6 +101,9 @@ const ContactPageStyled = styled.div`
         }
         .form{
             width: 100%;
+            @media screen and (max-width: 502px){
+                width: 100%;
+            }
             .form-field{
                 margin-top: 2rem;
                 position: relative;
