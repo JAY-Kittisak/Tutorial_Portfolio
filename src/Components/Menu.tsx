@@ -53,10 +53,17 @@ const MenuItemStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+    @media screen and (max-width:920px){
+            grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width:670px){
+        grid-template-columns: repeat(1, 1fr);
+    }
     .grid-item{
         .portfolio-content{
             display: block;
             position: relative;
+            overflow: hidden;
             h6{
                 font-size: 1.5rem;
             }
@@ -64,7 +71,33 @@ const MenuItemStyled = styled.div`
                 width: 100%;
             }
             ul{
-                display: none;
+                transform: translateY(-600px);
+                transition: all .4s ease-in-out;
+                position: absolute;
+                left: 50%;
+                top: 40%;
+                opacity: 0;
+                li{
+                    background-color: var(--border-color);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem;
+                    border-radius: 50%;
+                    width: 3rem;
+                    height: 3rem;
+                    margin: 0 .5rem;
+                    transition: all .4s ease-in-out;
+                    &:hover{
+                        background-color: var(--primary-color)
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all .4s ease-in-out;
+                    }
+                }
             }
 
             .portfolio-image{
@@ -80,22 +113,30 @@ const MenuItemStyled = styled.div`
             }
             .portfolio-image:hover{
                 ul{
-                    display: block;
-                    position: absolute;
-                    left: 50%;
-                    top: 40%;
+                    transform: translateY(0);
                     transform: translate(-50%, -50%);
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    transition: all .4s ease-in-out;
+                    opacity: 1;
                     li{
-                        background-color: red;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 1rem;
-                        border-radius: 50%;
-                        margin: 0 .5rem;
+                        transition: all .4s ease-in-out;
+                        &:hover{
+                            background-color: var(--primary-color)
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all .4s ease-in-out;
+                        }
+                    }
+                    
+                    li:hover{
+                        svg{
+                            color: var(--white-color);
+                        }
                     }
                     svg{
                         font-size: 2rem;

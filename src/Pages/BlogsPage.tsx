@@ -36,7 +36,9 @@ const BlogsStyled = styled.div`
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 3rem;
-
+        @media screen and (max-width:770px){
+            grid-template-columns: repeat(1, 1fr);
+        }
         .blog-item{
             background-color: var(--background-dark-grey);
             padding: 1rem 1rem;
@@ -60,9 +62,10 @@ const BlogsStyled = styled.div`
 
         .title{
             a{
-                font-size: 1rem;
+                font-size: 1.8rem;
                 padding: 2rem 0;
                 color: var(--white-color);
+                cursor: pointer;
                 transition: all .4s ease-in-out;
                 &:hover{
                     color: var(--primary-color);
